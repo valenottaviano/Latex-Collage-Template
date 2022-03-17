@@ -1,0 +1,43 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+%\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage[a4paper]{geometry}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{csquotes}
+\usepackage{floatrow}
+\usepackage[bottom]{footmisc}
+
+
+\DeclareUnicodeCharacter{2212}{−}
+\usepgfplotslibrary{groupplots,dateplot}
+\usetikzlibrary{patterns,shapes.arrows}
+\pgfplotsset{compat=newest}
+
+\graphicspath{{img/}}
+
+\renewcommand{\chaptername}{Unidad}
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\bibname}{Bibliografía}
+
+%opening
+\title{
+	\textbf{Estructura de Datos I}\\
+	{\Large Universidad del Norte Santo Tomás de Aquino}
+	\author{Valentín Ottaviano}
+	\date{2022}}
+
+\begin{document}
+	
+	\maketitle
+	
+	\tableofcontents
+	
+	\include{Unidades/unidad_1}
+	
+\end{document}
